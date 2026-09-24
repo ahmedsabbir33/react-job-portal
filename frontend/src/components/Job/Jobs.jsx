@@ -9,7 +9,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get("http://localhost:4000/api/v1/job/getall", {
+        .get("http://localhost:8082/api/v1/job/getall", {
           withCredentials: true,
         })
         .then((res) => {
